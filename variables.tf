@@ -1,13 +1,13 @@
 variable "mailgun_smtp_password" {
-  type = "string"
+  type = string
 }
 
 variable "domain" {
-  type = "string"
+  type = string
 }
 
 variable "mailgun_spam_action" {
-  type = "string"
+  type = string
   default = "tag"
   description = "Spam filter behavior, (tag or disabled)."
 }
