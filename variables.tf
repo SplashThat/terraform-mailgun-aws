@@ -18,7 +18,8 @@ variable "mailgun_wildcard" {
 }
 
 variable "mailgun_set_mx_for_inbound" {
-  default = 1
+  type    = bool
+  default = true
   description = "Affects terraform-mailgun-aws module behavior. Set to false or 0 to prevent this module from setting mailgun.org MX records on your Route53 Hosted Zone. See more information about how terraform handles booleans here: https://www.terraform.io/docs/configuration/variables.html"
 }
 
